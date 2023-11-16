@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box ;
+}
+.intro{
+    height: 65vh;
+    width: 100%;
+    background-image: url(assets/background.png);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo{
+    color: white;
+    font-size: 45px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span{
+    color: hsl(199, 89%, 50%);
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 50px;
+    margin-top: 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: hsl(199, 89%, 50%);
+    transition: .4s;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+}
+h1{
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 65px;
+}
+h4{
+    color: #fcfc;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+h3{
+    color: white;
+    font-size: 25px;
+}
+.about{
+    width: 100%;
+    padding: 50px 0px;
+    background-color: #191919e8;
+    text-align: center;
+}
+.about img{
+    height: auto;
+    width: 400px;
+    border-radius: 50%;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h2{
+    color: white;
+    font-size: 55px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+p{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.education{
+    width: 100%;
+    padding: 50px 0px;
+    text-align: center;
+    background-color: rgba(4, 2, 2, 0.879);
+}
+h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.cardContainer{
+    display: flex;
+    justify-content: center;
+}
+.button{
+    background-color: hsl(199, 89%, 50%);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.button:hover{
+    background-color: transparent;
+    border: 2px solid hsl(199, 92%, 21%);
+    cursor: pointer;
+}
+.card{
+    height: 440px;
+    width: 400px;
+    background: hsl(199, 88%, 16%);
+    border-radius: 20px;
+    margin: 30px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card img{
+    width: 100%;
+    height: 220px;
+    margin-bottom: 30px;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.social{
+    display: flex;
+}
+.social a{
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(199, 89%, 50%);
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.social a:hover{
+    transform: scale(1.5);
+    transition: .4s;
+}
+section{
+    overflow: hidden;
+}
+section .animate{
+    opacity: 0;
+    filter: blur(5px);
+    transition: .6s;
+}
+section.show-animation .animate{
+    opacity: 1;
+    filter: blur(0);
+}
+.sec3 .animate {
+    transform: translateX(-100px);
+}
+.sec3.show-animation .animate {
+    transform: translateX(0);
+}
